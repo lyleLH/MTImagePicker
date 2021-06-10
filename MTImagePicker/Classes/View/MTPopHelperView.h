@@ -10,7 +10,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MTPopHelperView : UIView
+
 - (void)showPopContentView:(UIView*)view ;
+- (void)hideContentView ;
+
 @end
 
 NS_ASSUME_NONNULL_END

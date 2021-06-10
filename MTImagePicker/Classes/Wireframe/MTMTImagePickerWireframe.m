@@ -29,7 +29,7 @@
     // present controller
     // *** present self with RootViewController
 //    [viewController presentViewController:self.viewController animated:YES completion:NULL];
-    UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 320)];
+    UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 340)];
     view.backgroundColor = [UIColor yellowColor];
     
     MTPopHelperView* helperView =   [[MTPopHelperView alloc]initWithFrame:viewController.view.bounds];

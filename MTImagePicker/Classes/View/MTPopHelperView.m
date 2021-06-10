@@ -41,10 +41,10 @@
     [self.bgView setFrame:self.bounds];
     [self addSubview: view];
     self.popContentView  = view;
-    
-    CGFloat height = [UIScreen mainScreen].bounds.size.height*(331.0/667.0);
+ 
+    CGFloat height = view.frame.size.height;
     [self.popContentView setFrame:CGRectMake(0, CGRectGetMaxY(self.frame), CGRectGetWidth(self.frame),height)];
-    
+
 //    NSLog(@"in view -- %@",NSStringFromCGRect(self.frame));
     
     [UIView animateWithDuration:0.3f animations:^{
@@ -66,27 +66,7 @@
     
 }
 
-
-
-//- (YKShareView *)shareview {
-//    if(!_shareview){
-//        YKShareView * shareView = [[YKShareView alloc] init];
-//        if([self.dataSourceDelegate respondsToSelector:@selector(shareViewDataSource)]){
-//            if([self.dataSourceDelegate shareViewDataSource].count>0){
-//                shareView.datasource = [NSMutableArray arrayWithArray:[self.dataSourceDelegate shareViewDataSource]];
-//            }
-//
-//        }
-//        [shareView setUpShareView];
-//        shareView.shareViewDelegate = self;
-//        _shareview = shareView;
-//        [self addSubview: _shareview];
-//    }
-//    return _shareview;
-//}
-//
-
-
+ 
 -(UIView *)bgView {
     if(!_bgView){
         UIView * bgView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -102,22 +82,5 @@
 }
 
 
-
-- (void)shareView:(nonnull UIView *)view cancleSelectClicked:(nonnull UIButton *)button {
-    [self hideContentView];
-    
-}
-
-- (void)shareView:(nonnull UIView *)view didselectedShareItemIndex:(nonnull NSIndexPath *)indexPath {
-
-//    if([self.eventDelegate respondsToSelector:@selector(shareHelperView:didselectedShareItemIndex:)]){
-//        [self.eventDelegate shareHelperView:self didselectedShareItemIndex:indexPath];
-//    }
-    [self hideContentView];
-    
-    
-    
-   
-}
-
+ 
 @end
