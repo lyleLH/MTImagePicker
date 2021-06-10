@@ -1,0 +1,39 @@
+PODS:
+  - LookinServer (1.0.2)
+  - Masonry (1.1.0)
+  - MTImagePicker (0.1.0):
+    - MTLayoutUtilityComponent
+    - pop
+  - MTLayoutUtilityComponent (1.0.0):
+    - Masonry
+    - MTLayoutUtilityComponent/MTMasConstraintMaker (= 1.0.0)
+  - MTLayoutUtilityComponent/MTMasConstraintMaker (1.0.0):
+    - Masonry
+  - pop (1.0.12)
+
+DEPENDENCIES:
+  - LookinServer
+  - MTImagePicker (from `../`)
+
+SPEC REPOS:
+  https://github.com/lyleLH/MTSpecs.git:
+    - MTLayoutUtilityComponent
+  trunk:
+    - LookinServer
+    - Masonry
+    - pop
+
+EXTERNAL SOURCES:
+  MTImagePicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LookinServer: d6874df8b58096c8d463817b6baaa3abc21d31f7
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MTImagePicker: d0d821a19ce77e962adc4b25a46e458905382cf9
+  MTLayoutUtilityComponent: e75784763b371400b988c8767634e2b940450095
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+
+PODFILE CHECKSUM: 2582404a27e09821acc3913b162a3d1b47bf8a46
+
+COCOAPODS: 1.10.1

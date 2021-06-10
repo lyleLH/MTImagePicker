@@ -1,0 +1,16 @@
+source 'https://github.com/lyleLH/MTSpecs.git'
+source 'https://cdn.cocoapods.org/'                  #官方仓库地址 cdn
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'MTImagePicker_Example' do
+  pod 'LookinServer'
+  pod 'MTImagePicker', :path => '../'
+
+  target 'MTImagePicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
