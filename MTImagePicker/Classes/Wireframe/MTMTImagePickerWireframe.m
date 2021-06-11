@@ -30,8 +30,8 @@
     // present controller
     // *** present self with RootViewController
 //    [viewController presentViewController:self.viewController animated:YES completion:NULL];
-    self.previewView= [[MTPickerPreviewView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 340)];
-    self.previewView.backgroundColor = [UIColor yellowColor];
+    self.previewView= [[MTPickerPreviewView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 368)];
+    self.previewView.backgroundColor = [UIColor whiteColor];
     
     MTPopHelperView* helperView =   [[MTPopHelperView alloc]initWithFrame:viewController.view.bounds];
     [helperView showPopContentView:self.previewView];

@@ -17,6 +17,7 @@
 #import "MTMTImagePickerPresenter.h"
 #import "MTMTImagePickerViewController.h"
 #import "MTMTImagePickerViewInterface.h"
+#import "MTPickerPreviewView.h"
 #import "MTPopHelperView.h"
 #import "MTMTImagePickerWireframe.h"
 

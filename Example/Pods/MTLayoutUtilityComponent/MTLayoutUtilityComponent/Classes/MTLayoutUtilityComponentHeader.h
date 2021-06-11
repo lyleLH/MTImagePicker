@@ -9,5 +9,6 @@
 #define MTLayoutUtilityComponentHeader_h
 
 #import "MTMasConstraintMaker.h"
-
+#import "MTLayout.h"
+#import "MTLayoutCategoryheader.h"
 #endif /* MTLayoutUtilityComponentHeader_h */

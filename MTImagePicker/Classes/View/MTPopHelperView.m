@@ -7,7 +7,9 @@
 
 #import "MTPopHelperView.h"
 #import <pop/POP.h>
-#import <MTLayoutUtilityComponent/MTMasConstraintMaker.h>
+#import <MTLayoutUtilityComponent/MTLayoutCategoryheader.h>
+#import <MTCategoryComponent/MTCategoryComponentHeader.h>
+
 @interface MTPopHelperView ()
 @property (nonatomic,strong) UIView *bgView;
 @property (nonatomic,strong) UIView *popContentView;
@@ -39,14 +41,14 @@
 
 - (void)showPopContentView:(UIView*)view {
     [self.bgView setFrame:self.bounds];
-    [self addSubview: view];
-    self.popContentView  = view;
- 
-    CGFloat height = view.frame.size.height;
-    [self.popContentView setFrame:CGRectMake(0, CGRectGetMaxY(self.frame), CGRectGetWidth(self.frame),height)];
-
-//    NSLog(@"in view -- %@",NSStringFromCGRect(self.frame));
+    CGFloat height = view.frame.size.height+[UIScreen mt_safeBottomMargin];
     
+    self.popContentView = [[UIView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.frame), CGRectGetWidth(self.frame),height)];
+    self.popContentView.backgroundColor = [UIColor whiteColor];
+    [self addSubview: self.popContentView];
+    
+    [self.popContentView  addSubview:view];
+
     [UIView animateWithDuration:0.3f animations:^{
         self.bgView.alpha = 0.25f;
     }];

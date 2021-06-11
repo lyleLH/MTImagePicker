@@ -11,9 +11,6 @@
 
 
 @property (nonatomic,strong)UICollectionView * collectionView;
-@property (nonatomic,strong)UIButton * cancleButton;
-@property (nonatomic,strong)UIButton * cameraButton;
-@property (nonatomic,strong)UIButton * photosButton;
 
 
 @property (nonatomic,strong)NSMutableArray * dataSource;
