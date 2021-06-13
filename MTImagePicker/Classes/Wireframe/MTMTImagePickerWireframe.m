@@ -9,11 +9,11 @@
 #import "MTMTImagePickerWireframe.h"
 #import "MTMTImagePickerViewController.h"
 #import "MTPopHelperView.h"
-#import "MTPickerPreviewView.h"
+#import "MTPickerMenuView.h"
 @interface MTMTImagePickerWireframe ()
 
 @property (nonatomic, strong) MTMTImagePickerViewController *viewController;
-@property (nonatomic, strong) MTPickerPreviewView * previewView;
+@property (nonatomic, strong) MTPickerMenuView * previewView;
 @end
 
 @implementation MTMTImagePickerWireframe
@@ -30,7 +30,7 @@
     // present controller
     // *** present self with RootViewController
 //    [viewController presentViewController:self.viewController animated:YES completion:NULL];
-    self.previewView= [[MTPickerPreviewView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 368)];
+    self.previewView= [[MTPickerMenuView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 368)];
     self.previewView.backgroundColor = [UIColor whiteColor];
     
     MTPopHelperView* helperView =   [[MTPopHelperView alloc]initWithFrame:viewController.view.bounds];

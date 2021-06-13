@@ -303,6 +303,10 @@
 		E093DAAE870B58811A3CCF79DB0B21FA /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C61A7F098C67741795B9C1D655A5C6C4 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1C6E1A83CC0A1342A2C8084EC643478 /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5C38A7B4251D1F42CDEE261147673CD /* POPAnimationExtras.mm */; };
 		E26F79D2B7156F04EFA32803D8E9A24A /* LookinAutoLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C1E1A482F451E510D4366F80CA173 /* LookinAutoLayoutConstraint.m */; };
+		E2C9D3F22675DB3B002FDA8A /* MTPickerMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C9D3F02675DB3B002FDA8A /* MTPickerMenuView.h */; };
+		E2C9D3F32675DB3B002FDA8A /* MTPickerMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C9D3F12675DB3B002FDA8A /* MTPickerMenuView.m */; };
+		E2C9D3F62675EBE4002FDA8A /* MTImagePreviewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C9D3F42675EBE4002FDA8A /* MTImagePreviewCell.h */; };
+		E2C9D3F72675EBE4002FDA8A /* MTImagePreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C9D3F52675EBE4002FDA8A /* MTImagePreviewCell.m */; };
 		E2E5001553E30767EE5447ABE986AB90 /* LKS_HierarchyDetailsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 53545D524A1F225DF728A96B12F98A19 /* LKS_HierarchyDetailsHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3B6188DF241DD479EAF750D04F51C8C /* POPAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F6661E911011D79D145E4004A1B028 /* POPAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E496A7FBA4E5284C303A7BD5F1FDC958 /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = B79B30E84604693101A88D4AEFF4B560 /* POPPropertyAnimation.mm */; };
@@ -467,11 +471,11 @@
 		0EB25777910F712B2193155B25DA5E30 /* MTLayoutUtilityComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTLayoutUtilityComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F05A9917AA4E13E305F1AE80C264082 /* NSArray+MTExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MTExtension.m"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSArray+MTExtension.m"; sourceTree = "<group>"; };
 		0F0D4CE3397D5CA28D032D4CAD7D0EB1 /* Pods-MTImagePicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MTImagePicker_Example-dummy.m"; sourceTree = "<group>"; };
-		0F1885ACA22C8FF786030B034A63F3CF /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
+		0F1885ACA22C8FF786030B034A63F3CF /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
 		0F78B1F6D5649A1657B9337F86E5A3D5 /* MTMTImagePickerModuleInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MTMTImagePickerModuleInterface.h; sourceTree = "<group>"; };
 		0FB3A3D27011A8C53CDAB11EA886B2D9 /* MTMTImagePickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MTMTImagePickerViewController.h; sourceTree = "<group>"; };
 		11679BB3A9CC4091DD470B6F2205C422 /* LookinMsgTargetAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinMsgTargetAction.m; path = Src/Shared/Message/LookinMsgTargetAction.m; sourceTree = "<group>"; };
-		11DD5C435B4D1080BA23FD135B34CCD8 /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
+		11DD5C435B4D1080BA23FD135B34CCD8 /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
 		121E84903FA319D77911045E46263922 /* Toast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Toast.modulemap; sourceTree = "<group>"; };
 		13319024D29AAFCCC32EBF61901ED456 /* POPSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimation.h; path = pop/POPSpringAnimation.h; sourceTree = "<group>"; };
 		164F7E5773F554FC5FA5A2988864452A /* CALayer+Lookin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+Lookin.h"; path = "Src/Shared/Category/CALayer+Lookin.h"; sourceTree = "<group>"; };
@@ -493,15 +497,15 @@
 		1F4A5E03ACC8739D74CD985682BF3221 /* LookinConnectionAttachment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinConnectionAttachment.m; path = Src/Shared/LookinConnectionAttachment.m; sourceTree = "<group>"; };
 		1F6D6796553612D2E7C50698710FA1F0 /* LookinMsgAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinMsgAttribute.m; path = Src/Shared/Message/LookinMsgAttribute.m; sourceTree = "<group>"; };
 		1FA652F67036ADBA8423B493404D13D7 /* LKS_ObjectRegistry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_ObjectRegistry.h; path = Src/Server/Others/LKS_ObjectRegistry.h; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20321DEE47A072F20778B901A808F284 /* MTImagePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTImagePicker.h; path = MTImagePicker/Classes/MTImagePicker.h; sourceTree = "<group>"; };
-		2035BA8338278E7007B99906E2BB6D72 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
+		2035BA8338278E7007B99906E2BB6D72 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
 		204031D627868A0B18161FB41EA17D2D /* LKS_PerspectiveToolbarButtons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_PerspectiveToolbarButtons.h; path = Src/Server/Perspective/LKS_PerspectiveToolbarButtons.h; sourceTree = "<group>"; };
 		216BD0C5A4B1827C848025F47E61B173 /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
 		23CF074B91A3B531DBD2AADB80CDF371 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		24239CEDADE4CA7249C66C7601D33200 /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
 		24FE5CE0C5970EE4D3A01B70422BCD8E /* LookinServer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LookinServer-Info.plist"; sourceTree = "<group>"; };
-		25664483ABF4DC8EC03E7472AA04333B /* LookinServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LookinServer.framework; path = LookinServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25664483ABF4DC8EC03E7472AA04333B /* LookinServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LookinServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26AC39F4225F8F560C59A6FF9F8C3829 /* NSArray+Lookin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Lookin.m"; path = "Src/Shared/Category/NSArray+Lookin.m"; sourceTree = "<group>"; };
 		270D89DFA10C13C1B8C8F0739683E5AC /* NSObject+MTExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTExtension.m"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSObject+MTExtension.m"; sourceTree = "<group>"; };
 		27DC176264041537583FA034CCFC98F1 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
@@ -527,7 +531,7 @@
 		384A928B5467CE40FBB56DDD688FE485 /* UITextField+LookinServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+LookinServer.m"; path = "Src/Server/Category/UITextField+LookinServer.m"; sourceTree = "<group>"; };
 		38A4282D52C57241D66D541FEE9D831D /* LKS_RequestHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_RequestHandler.h; path = Src/Server/Connection/LKS_RequestHandler.h; sourceTree = "<group>"; };
 		3972FEDED357A5A150BE7E113F3FB859 /* MTImagePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTImagePicker.m; path = MTImagePicker/Classes/MTImagePicker.m; sourceTree = "<group>"; };
-		39B60A49F4AD2E661027CECD94E477FE /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
+		39B60A49F4AD2E661027CECD94E477FE /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
 		3A5F370CF6412CA55C6C76F09D7A6452 /* LookinDisplayItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinDisplayItem.h; path = Src/Shared/LookinDisplayItem.h; sourceTree = "<group>"; };
 		3B43A52532413A2555E00DFAC72E87C0 /* LKS_EventHandlerMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_EventHandlerMaker.h; path = Src/Server/Others/LKS_EventHandlerMaker.h; sourceTree = "<group>"; };
 		3BB17C18375248E04C42FD724B07C07B /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
@@ -537,7 +541,7 @@
 		3E032DDF8C92CE0B75F2BB6F67689CDA /* MTMTImagePickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MTMTImagePickerViewController.m; sourceTree = "<group>"; };
 		3F061457F095169EA55E34B6EBAAB0B0 /* MTCategoryComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MTCategoryComponent.debug.xcconfig; sourceTree = "<group>"; };
 		3F69C7B580393B5BFBFE5517486624AB /* PTUSBHub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTUSBHub.m; path = Src/Shared/Peertalk/PTUSBHub.m; sourceTree = "<group>"; };
-		3FB39620FE57CB0149433F629CE7E891 /* MTImagePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MTImagePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3FB39620FE57CB0149433F629CE7E891 /* MTImagePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MTImagePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3FE7061355E44BB20EBD9B9382787603 /* UITextField+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+LookinServer.h"; path = "Src/Server/Category/UITextField+LookinServer.h"; sourceTree = "<group>"; };
 		40C9B9FC4A88DBD55B6C3D8771F21AA0 /* LookinHierarchyFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinHierarchyFile.m; path = Src/Shared/LookinHierarchyFile.m; sourceTree = "<group>"; };
 		40CCE6D2DCAF39E3C082C63AFFDAE6EC /* LKS_ExportManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_ExportManager.h; path = Src/Server/Others/LKS_ExportManager.h; sourceTree = "<group>"; };
@@ -555,29 +559,29 @@
 		49919C6199F938BBF7FB6B191F276023 /* LookinServer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LookinServer-umbrella.h"; sourceTree = "<group>"; };
 		49CF9264D99200EE97B3DD30FB101A11 /* LookinAutoLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinAutoLayoutConstraint.h; path = Src/Shared/LookinAutoLayoutConstraint.h; sourceTree = "<group>"; };
 		49E6957050064F882FAB9CE594993AA7 /* LKS_RequestHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_RequestHandler.m; path = Src/Server/Connection/LKS_RequestHandler.m; sourceTree = "<group>"; };
-		4A4B782B47814460D2CFDEBCC51C566F /* MTCategoryComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MTCategoryComponent.framework; path = MTCategoryComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4B782B47814460D2CFDEBCC51C566F /* MTCategoryComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTCategoryComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA163174566F22F3865366172D5F088 /* LKS_LocalInspectManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_LocalInspectManager.m; path = Src/Server/Inspect/LKS_LocalInspectManager.m; sourceTree = "<group>"; };
 		4AC5CEF467B4506FA525C2D3612E22DA /* LookinAttrIdentifiers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinAttrIdentifiers.h; path = Src/Shared/LookinAttrIdentifiers.h; sourceTree = "<group>"; };
 		4AEC060D2724AD92B6298C0FFD6D493E /* MTLayoutUtilityComponentHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLayoutUtilityComponentHeader.h; path = MTLayoutUtilityComponent/Classes/MTLayoutUtilityComponentHeader.h; sourceTree = "<group>"; };
-		4B9FDF4FA16DE6D03713E7218FDC5ECD /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
+		4B9FDF4FA16DE6D03713E7218FDC5ECD /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
 		4BC60F6628A783E21C2DB21A10D9ED25 /* LookinTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinTuple.h; path = Src/Shared/LookinTuple.h; sourceTree = "<group>"; };
 		4C32F0385657D5638DBBC68B3B8E74D1 /* MTCategoryComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTCategoryComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C47AD8D9C1882045E4987FA5A8D242D /* MTImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MTImagePicker.framework; path = MTImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C47AD8D9C1882045E4987FA5A8D242D /* MTImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5F72E26BD11F47885680653DF3B515 /* Pods-MTImagePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTImagePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4F99A17FC651F2259B045296BD3E18DF /* NSObject+LookinServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+LookinServer.m"; path = "Src/Server/Category/NSObject+LookinServer.m"; sourceTree = "<group>"; };
 		50B2D0B4D129D78DCCAE0BE7CBF659B2 /* LookinIvarTrace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinIvarTrace.m; path = Src/Shared/LookinIvarTrace.m; sourceTree = "<group>"; };
-		51305B2D9D8DA36D89CC277D729083D2 /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = pop.framework; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51305B2D9D8DA36D89CC277D729083D2 /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53545D524A1F225DF728A96B12F98A19 /* LKS_HierarchyDetailsHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_HierarchyDetailsHandler.h; path = Src/Server/Connection/RequestHandler/LKS_HierarchyDetailsHandler.h; sourceTree = "<group>"; };
 		53A2BC239BFEFB617D4CCC816A610F69 /* Toast-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Info.plist"; sourceTree = "<group>"; };
 		547A2D3CCE536EE189DAB0B0811568BA /* POPDecayAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimation.h; path = pop/POPDecayAnimation.h; sourceTree = "<group>"; };
 		54DD43DF8326B26B4ACF71C261B45B0F /* MTPickerPreviewView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MTPickerPreviewView.h; sourceTree = "<group>"; };
-		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast.framework; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56EEB38EF501D8D4B47260650E0D3B18 /* LKS_EventHandlerMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_EventHandlerMaker.m; path = Src/Server/Others/LKS_EventHandlerMaker.m; sourceTree = "<group>"; };
 		572613E81EA24780C32DC94220A61BCE /* NSMutableDictionary+MTExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+MTExtension.m"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSMutableDictionary+MTExtension.m"; sourceTree = "<group>"; };
 		57FAED407167D20A0594AB36F59550D3 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
 		582EDAACA27FEC179C4726B437AF1B8D /* Pods-MTImagePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTImagePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		58B3C4703FDFC4AB5FCD68DE05D5ADE7 /* LKS_AttrGroupsMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_AttrGroupsMaker.m; path = Src/Server/Others/LKS_AttrGroupsMaker.m; sourceTree = "<group>"; };
-		58BF1B870F974AB1F207E2B743B2DA21 /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
+		58BF1B870F974AB1F207E2B743B2DA21 /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
 		5902438E929EBE71A1C37C1F11C0EFA8 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		5A7A2879A134C192E987A9A5F2A1824C /* Toast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-umbrella.h"; sourceTree = "<group>"; };
 		5AA9879F5D99A83FA158101F2B77304C /* TransformationMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TransformationMatrix.h; path = pop/WebCore/TransformationMatrix.h; sourceTree = "<group>"; };
@@ -606,8 +610,8 @@
 		6680E063AC9B6DD7BBD69401D6446782 /* NSDictionary+MTExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTExtension.m"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSDictionary+MTExtension.m"; sourceTree = "<group>"; };
 		669EDB0682E2A34CD734E319B5BF6658 /* LookinDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinDefines.h; path = Src/Shared/LookinDefines.h; sourceTree = "<group>"; };
 		670B902A22BAF0C94A8F9008F1AE0911 /* LookinAttributeModification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinAttributeModification.h; path = Src/Shared/LookinAttributeModification.h; sourceTree = "<group>"; };
-		679F8EB5C67C6FD2F526C9BC94F4C7F1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		6826208D98F46FFD0E0B92746D488CDA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		679F8EB5C67C6FD2F526C9BC94F4C7F1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6826208D98F46FFD0E0B92746D488CDA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		686C8DCCDC0A706EEEBC2FEEB7AC4F88 /* UIImageView+LookinServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+LookinServer.m"; path = "Src/Server/Category/UIImageView+LookinServer.m"; sourceTree = "<group>"; };
 		68C38D445807B4DD1F9B697710DFA929 /* LookinServer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LookinServer.modulemap; sourceTree = "<group>"; };
 		6961AB2B300E59526F06B11137D85687 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
@@ -627,14 +631,14 @@
 		728CC16A2A8F6E4714E1E7F51B393C76 /* MTImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTImagePicker-prefix.pch"; sourceTree = "<group>"; };
 		729669127E52DF17217A7E5E4EC657EE /* LookinWeakContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinWeakContainer.h; path = Src/Shared/LookinWeakContainer.h; sourceTree = "<group>"; };
 		72C96AB7F54CE795243AE8DF86693C77 /* MTImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MTImagePicker.release.xcconfig; sourceTree = "<group>"; };
-		73448C28EB4C810A0E1FF1548038EE0D /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
+		73448C28EB4C810A0E1FF1548038EE0D /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
 		74A4E9F2B6313B9BEA32DCE7D5DB1B2F /* UIColor+MTExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MTExtension.h"; path = "MTCategoryComponent/Classes/UIKit/UIColor/UIColor+MTExtension.h"; sourceTree = "<group>"; };
 		74AC78E7329680C5D76BA090A740C9B3 /* NSArray+MTExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MTExtension.h"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSArray+MTExtension.h"; sourceTree = "<group>"; };
 		75568E0C3FD071A2B09534FBBAB33E7F /* LKS_PerspectiveDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_PerspectiveDataSource.h; path = Src/Server/Perspective/LKS_PerspectiveDataSource.h; sourceTree = "<group>"; };
 		75AFA38CF0965B5DC8C644AFDE20EE89 /* MTMTImagePickerWireframe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MTMTImagePickerWireframe.h; sourceTree = "<group>"; };
 		75B86C9D13CF27073BA68041A6A461C9 /* MTLayoutUtilityComponent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTLayoutUtilityComponent-umbrella.h"; sourceTree = "<group>"; };
-		75C4F9405078FBA7D511C5944034A7C4 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
-		76503F4BF849A27D016D080A5DC8D442 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
+		75C4F9405078FBA7D511C5944034A7C4 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
+		76503F4BF849A27D016D080A5DC8D442 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
 		76815E06AD93743E3BDA2C658E133556 /* UITextView+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+LookinServer.h"; path = "Src/Server/Category/UITextView+LookinServer.h"; sourceTree = "<group>"; };
 		76F50FE8415A407F1BF19BB5D6BDA19A /* POPSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringSolver.h; path = pop/POPSpringSolver.h; sourceTree = "<group>"; };
 		770DE2A60A692BD55FF3B70D7FECE6B0 /* NSObject+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+LookinServer.h"; path = "Src/Server/Category/NSObject+LookinServer.h"; sourceTree = "<group>"; };
@@ -646,8 +650,8 @@
 		794B027CB569A4D841117D3DC896509F /* UIColor+MTExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MTExtension.m"; path = "MTCategoryComponent/Classes/UIKit/UIColor/UIColor+MTExtension.m"; sourceTree = "<group>"; };
 		7A4044E710E3ABD86BC55D0B47DAEC4E /* LKS_PerspectiveItemLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_PerspectiveItemLayer.h; path = Src/Server/Perspective/LKS_PerspectiveItemLayer.h; sourceTree = "<group>"; };
 		7AE078EAE36FD5D59260DDAFF48CE852 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		7AEE9A173E72F0E14D45AAB9CB2BCF7C /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
-		7B5F87E10D79042D2D1DBFAD990281D0 /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
+		7AEE9A173E72F0E14D45AAB9CB2BCF7C /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
+		7B5F87E10D79042D2D1DBFAD990281D0 /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
 		7BA18ECC9C1DC46066B57B9089606CA7 /* LookinDisplayItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinDisplayItem.m; path = Src/Shared/LookinDisplayItem.m; sourceTree = "<group>"; };
 		7C75A888422ED7EF0FD93C996CDB0040 /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
 		7D41D4A6D3F2F04CA15FBDF9445CF800 /* UIImage+MTExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MTExtension.h"; path = "MTCategoryComponent/Classes/UIKit/UIImage/UIImage+MTExtension.h"; sourceTree = "<group>"; };
@@ -675,7 +679,7 @@
 		89C3E033BBB1EE1A8F1C5F420A8FEC77 /* UIFont+MTLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+MTLayout.h"; path = "MTLayoutUtilityComponent/Classes/Common/Category/UIFont+MTLayout.h"; sourceTree = "<group>"; };
 		8A7B02B3F3CB10D19BA70499ECB62233 /* MTImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MTImagePicker-dummy.m"; sourceTree = "<group>"; };
 		8B182B3C91E6A80D94CBCC780670C794 /* MTLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLayout.m; path = MTLayoutUtilityComponent/Classes/Common/MTLayout.m; sourceTree = "<group>"; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA0875CB8CE2A2A593FBD3BC125E023 /* LookinDashboardBlueprint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinDashboardBlueprint.m; path = Src/Shared/LookinDashboardBlueprint.m; sourceTree = "<group>"; };
 		8BB5515972D0328BFBD4F8DA3E71EB52 /* UIImageView+MTEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+MTEvent.h"; path = "MTCategoryComponent/Classes/UIKit/UIImageView/UIImageView+MTEvent.h"; sourceTree = "<group>"; };
 		8C7B468828C4401347AB4254D440D02C /* UIVisualEffectView+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIVisualEffectView+LookinServer.h"; path = "Src/Server/Category/UIVisualEffectView+LookinServer.h"; sourceTree = "<group>"; };
@@ -685,7 +689,7 @@
 		8E5317495EEE672C5F95E7A6635DC2E1 /* Pods-MTImagePicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MTImagePicker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		907080778470FD6AB4551D32173B51FE /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		91BD3BCFEB96AD59BDE6F114D3E46C6B /* Pods-MTImagePicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MTImagePicker_Tests-dummy.m"; sourceTree = "<group>"; };
-		91D3D821759A73F28D6814983441FD79 /* Pods_MTImagePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MTImagePicker_Tests.framework; path = "Pods-MTImagePicker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91D3D821759A73F28D6814983441FD79 /* Pods_MTImagePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTImagePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9239A59C84FDEDA5846AE929640FA105 /* MTCategoryComponent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MTCategoryComponent-dummy.m"; sourceTree = "<group>"; };
 		9353668F3FE49F9E96197DE192F99FC4 /* LKS_PerspectiveLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_PerspectiveLayer.h; path = Src/Server/Perspective/LKS_PerspectiveLayer.h; sourceTree = "<group>"; };
 		93660C789015FDC463FEFAFED9E1A5FB /* POPAnimationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationExtras.h; path = pop/POPAnimationExtras.h; sourceTree = "<group>"; };
@@ -696,23 +700,23 @@
 		97722BE751C2488F46B467B7F516A20E /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A3456EF50E289C70730D38E46C14C2 /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracerInternal.h; path = pop/POPAnimationTracerInternal.h; sourceTree = "<group>"; };
 		98D9699389556DE8C1FC230E10B5C636 /* PTProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTProtocol.m; path = Src/Shared/Peertalk/PTProtocol.m; sourceTree = "<group>"; };
-		997CB8161BF43D8CB18F62740982FF9F /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
+		997CB8161BF43D8CB18F62740982FF9F /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
 		999EAB6E4F3DF5A25C5E476C794BA3C4 /* MTLayoutUtilityComponent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTLayoutUtilityComponent-prefix.pch"; sourceTree = "<group>"; };
 		9A00EB4D194C84F6636C0894691203D0 /* LKS_TraceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_TraceManager.h; path = Src/Server/Others/LKS_TraceManager.h; sourceTree = "<group>"; };
 		9B5698AD22BA5E6878364360635A7FA1 /* UIViewController+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+LookinServer.h"; path = "Src/Server/Category/UIViewController+LookinServer.h"; sourceTree = "<group>"; };
 		9D4DCE1C1965E2211BF2C6BE902A90B5 /* LookinAttributesSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinAttributesSection.h; path = Src/Shared/LookinAttributesSection.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0A4F4E977B5A609AB6E5537A1B17F1 /* LKS_HierarchyDisplayItemsMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_HierarchyDisplayItemsMaker.m; path = Src/Server/Others/LKS_HierarchyDisplayItemsMaker.m; sourceTree = "<group>"; };
 		9E79E11B137BACB3722766E62305D5A7 /* LKS_ConnectionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_ConnectionManager.m; path = Src/Server/Connection/LKS_ConnectionManager.m; sourceTree = "<group>"; };
 		A004FD46478E4D0EFB0900530927F181 /* Toast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-dummy.m"; sourceTree = "<group>"; };
 		A0303EA8BC001402CA52B2CE15C450D8 /* pop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = pop.release.xcconfig; sourceTree = "<group>"; };
 		A0330FDCDCDA47ED75196ACFDECC7AD2 /* MTMTImagePickerPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MTMTImagePickerPresenter.h; sourceTree = "<group>"; };
-		A08F7F07E945D07A8F8F1E14556455D5 /* Pods_MTImagePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MTImagePicker_Example.framework; path = "Pods-MTImagePicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08F7F07E945D07A8F8F1E14556455D5 /* Pods_MTImagePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTImagePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A098F1AF608A2397C4A1A866AC4761BA /* LKS_PerspectiveItemLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_PerspectiveItemLayer.m; path = Src/Server/Perspective/LKS_PerspectiveItemLayer.m; sourceTree = "<group>"; };
 		A14774E7E7C751D3C50DFA01A57F7C59 /* MTMTImagePickerDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MTMTImagePickerDataManager.m; sourceTree = "<group>"; };
 		A3373222796C0E4C026ADDA1569816A7 /* LKS_AttrGroupsMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_AttrGroupsMaker.h; path = Src/Server/Others/LKS_AttrGroupsMaker.h; sourceTree = "<group>"; };
 		A4C94369B266DF77321DAFF5B3AC9DB1 /* UILabel+LookinServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+LookinServer.m"; path = "Src/Server/Category/UILabel+LookinServer.m"; sourceTree = "<group>"; };
-		A5C38A7B4251D1F42CDEE261147673CD /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
+		A5C38A7B4251D1F42CDEE261147673CD /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
 		A6D7F87BE137887A8F0EF7D7CBCAE642 /* LKS_PerspectiveHierarchyCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_PerspectiveHierarchyCell.m; path = Src/Server/Perspective/LKS_PerspectiveHierarchyCell.m; sourceTree = "<group>"; };
 		A8211F8276AFCDC2BAF8BDE7C1777CC6 /* Pods-MTImagePicker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTImagePicker_Example-Info.plist"; sourceTree = "<group>"; };
 		A9B70C361F23959932ACF5DA115E03FF /* NSObject+MTExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MTExtension.h"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSObject+MTExtension.h"; sourceTree = "<group>"; };
@@ -732,11 +736,11 @@
 		B3EFE156A1B485788DF6659DD6E3E6B3 /* NSMutableDictionary+MTExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+MTExtension.h"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSMutableDictionary+MTExtension.h"; sourceTree = "<group>"; };
 		B44E70AF163177567F2ADD8F04B5C0B9 /* MTUITableViewExtensionHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTUITableViewExtensionHeader.h; path = MTCategoryComponent/Classes/UIKit/UITableView/MTUITableViewExtensionHeader.h; sourceTree = "<group>"; };
 		B52D70CA43A00E4B393729A705AEFB2E /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		B5E30A246B2CE4D117968AACAACD7D62 /* MTLayoutUtilityComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MTLayoutUtilityComponent.framework; path = MTLayoutUtilityComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E30A246B2CE4D117968AACAACD7D62 /* MTLayoutUtilityComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTLayoutUtilityComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B622CD21602F406AEA65375601E2DA2A /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		B65F326E7BF28872FC30C934964DCBF6 /* UIImage+LookinServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+LookinServer.m"; path = "Src/Server/Category/UIImage+LookinServer.m"; sourceTree = "<group>"; };
 		B7570213E4742CFAFCA069E03D0A7E32 /* POPVector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPVector.h; path = pop/POPVector.h; sourceTree = "<group>"; };
-		B79B30E84604693101A88D4AEFF4B560 /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
+		B79B30E84604693101A88D4AEFF4B560 /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
 		B819F3B642B1638531DF094F0412E660 /* LookinObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinObject.h; path = Src/Shared/LookinObject.h; sourceTree = "<group>"; };
 		B822438CE51034EA711EF7898CAE627A /* Pods-MTImagePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTImagePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B95EE0DC9E95AF254618505FFAE1F4EA /* MTMTImagePickerViewInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MTMTImagePickerViewInterface.h; sourceTree = "<group>"; };
@@ -751,10 +755,10 @@
 		BFAEC22DDC02D51E327D13CC0C5848D3 /* UITableView+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+LookinServer.h"; path = "Src/Server/Category/UITableView+LookinServer.h"; sourceTree = "<group>"; };
 		BFB652527A978AF693518BE22316324B /* LKS_MethodTraceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_MethodTraceManager.m; path = Src/Server/Others/LKS_MethodTraceManager.m; sourceTree = "<group>"; };
 		C22642994BD79FF9174632AEB984C722 /* LKS_LocalInspectViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_LocalInspectViewController.m; path = Src/Server/Inspect/LKS_LocalInspectViewController.m; sourceTree = "<group>"; };
-		C250DB719623FC9F44971EF95866A031 /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
+		C250DB719623FC9F44971EF95866A031 /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
 		C3108E96B60A1BF82E0CC5557995661B /* FloatConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = pop/WebCore/FloatConversion.h; sourceTree = "<group>"; };
 		C46803B1811ABE8563C1D2197A817A05 /* NSSet+Lookin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+Lookin.m"; path = "Src/Shared/Category/NSSet+Lookin.m"; sourceTree = "<group>"; };
-		C4B7B005A363F56B0AB2C699E646DFE6 /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
+		C4B7B005A363F56B0AB2C699E646DFE6 /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
 		C60E29BB0573732603D79B8047E7B648 /* LKS_PerspectiveDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_PerspectiveDataSource.m; path = Src/Server/Perspective/LKS_PerspectiveDataSource.m; sourceTree = "<group>"; };
 		C61A7F098C67741795B9C1D655A5C6C4 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
 		C6D486A138AB83C55CCCDEDC924BBBAC /* LKS_PerspectiveHierarchyCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_PerspectiveHierarchyCell.h; path = Src/Server/Perspective/LKS_PerspectiveHierarchyCell.h; sourceTree = "<group>"; };
@@ -773,7 +777,7 @@
 		D0DAC54E34CB4B55BF2AC8EB1521D19C /* UIImageView+MTEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+MTEvent.m"; path = "MTCategoryComponent/Classes/UIKit/UIImageView/UIImageView+MTEvent.m"; sourceTree = "<group>"; };
 		D14807A74C5F8CA7C6299B866C367EC5 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		D1583F2F379F4CA7A06F02B8D1311C60 /* POPAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimator.h; path = pop/POPAnimator.h; sourceTree = "<group>"; };
-		D176C2B7E6F6E4A5F75F5EA44EE3ADB4 /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
+		D176C2B7E6F6E4A5F75F5EA44EE3ADB4 /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
 		D1E754F9D731E1C066B899B6CA8F4C09 /* Pods-MTImagePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTImagePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D1EF5C7F4F194DF00C365DDAFE2BD868 /* MTUIKitExtensionHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTUIKitExtensionHeader.h; path = MTCategoryComponent/Classes/UIKit/MTUIKitExtensionHeader.h; sourceTree = "<group>"; };
 		D30DBC70251DF0EBE499205DADBFAC2D /* LookinServerDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinServerDefines.h; path = Src/Server/Others/LookinServerDefines.h; sourceTree = "<group>"; };
@@ -796,6 +800,10 @@
 		E156A05D2D19443EEE4008604433D6B7 /* LookinIvarTrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinIvarTrace.h; path = Src/Shared/LookinIvarTrace.h; sourceTree = "<group>"; };
 		E181648A79C12937AAB86882807A7AEF /* UIImage+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+LookinServer.h"; path = "Src/Server/Category/UIImage+LookinServer.h"; sourceTree = "<group>"; };
 		E1D225A3985B350CA07B502FFE16EE22 /* Toast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-prefix.pch"; sourceTree = "<group>"; };
+		E2C9D3F02675DB3B002FDA8A /* MTPickerMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTPickerMenuView.h; sourceTree = "<group>"; };
+		E2C9D3F12675DB3B002FDA8A /* MTPickerMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTPickerMenuView.m; sourceTree = "<group>"; };
+		E2C9D3F42675EBE4002FDA8A /* MTImagePreviewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImagePreviewCell.h; sourceTree = "<group>"; };
+		E2C9D3F52675EBE4002FDA8A /* MTImagePreviewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTImagePreviewCell.m; sourceTree = "<group>"; };
 		E3C64490810EDCE41AFF2A521B5E9046 /* LookinServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LookinServer-dummy.m"; sourceTree = "<group>"; };
 		E43D55EB2B3294FC4E7811511628CB71 /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
 		E5AB776B427EC27DF8B5C03E34E56039 /* UIColor+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+LookinServer.h"; path = "Src/Server/Category/UIColor+LookinServer.h"; sourceTree = "<group>"; };
@@ -1146,7 +1154,6 @@
 				2BEEB7D93D21735D6FFE5AB66F21B948 /* UIVisualEffectView+LookinServer.m */,
 				F2D8908ECDA8BA3D7EB63ADDF9373E5D /* Support Files */,
 			);
-			name = LookinServer;
 			path = LookinServer;
 			sourceTree = "<group>";
 		};
@@ -1190,7 +1197,6 @@
 				F6E5149E32743632FDF1203D948F2DEB /* ViewController+MASAdditions.m */,
 				42C41AD621783A205141C110487A1B57 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -1316,7 +1322,6 @@
 				8435439A0741E0AD8ED0BD716443CFCB /* MBProgressHUD.m */,
 				FFA1E26A80138311091CA1BC567AE1BD /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -1356,7 +1361,6 @@
 				33C6C41C39E49E75864F5087E5A31D6C /* MTMasConstraintMaker */,
 				3467D63367FA13DC48331AA900A89AD5 /* Support Files */,
 			);
-			name = MTLayoutUtilityComponent;
 			path = MTLayoutUtilityComponent;
 			sourceTree = "<group>";
 		};
@@ -1469,6 +1473,10 @@
 				B95EE0DC9E95AF254618505FFAE1F4EA /* MTMTImagePickerViewInterface.h */,
 				54DD43DF8326B26B4ACF71C261B45B0F /* MTPickerPreviewView.h */,
 				FBB551A9742B8CB0FD01400EBE9BA376 /* MTPickerPreviewView.m */,
+				E2C9D3F42675EBE4002FDA8A /* MTImagePreviewCell.h */,
+				E2C9D3F52675EBE4002FDA8A /* MTImagePreviewCell.m */,
+				E2C9D3F02675DB3B002FDA8A /* MTPickerMenuView.h */,
+				E2C9D3F12675DB3B002FDA8A /* MTPickerMenuView.m */,
 				6C139772704A9297AF54D188E81DC8DB /* MTPopHelperView.h */,
 				3592B9DE23B916A5BA28F4C2332CF53D /* MTPopHelperView.m */,
 			);
@@ -1484,7 +1492,6 @@
 				C7771B83AADFE59F543221806419ED06 /* UIView+Toast.m */,
 				3FD79794CC3F5C35072BCDDCF16E405B /* Support Files */,
 			);
-			name = Toast;
 			path = Toast;
 			sourceTree = "<group>";
 		};
@@ -1555,7 +1562,6 @@
 				6133F69CF050C2A465A9D8B063A749AC /* UnitBezier.h */,
 				CF993D99F22F8D0002D99F4FFB54E9A1 /* Support Files */,
 			);
-			name = pop;
 			path = pop;
 			sourceTree = "<group>";
 		};
@@ -1629,7 +1635,6 @@
 				2267814A2708E3EFD71AC26E2D978DB0 /* Support Files */,
 				38291F5907333F699624839C72403CAB /* UIKit */,
 			);
-			name = MTCategoryComponent;
 			path = MTCategoryComponent;
 			sourceTree = "<group>";
 		};
@@ -1783,6 +1788,7 @@
 				FCC0F530452D12E4D5B759409D66ACCF /* MTImagePicker-umbrella.h in Headers */,
 				E5389CCCEE5A44EEE0C5C4D07F5845F0 /* MTImagePicker.h in Headers */,
 				40A8A4218CD37ABA2667B5A1653422A8 /* MTMTImagePickerDataManager.h in Headers */,
+				E2C9D3F62675EBE4002FDA8A /* MTImagePreviewCell.h in Headers */,
 				838CAE6F2B5DBE39D82B653555C00E2D /* MTMTImagePickerInteractor.h in Headers */,
 				5EA80B790EC7DA8586A7B43C4EDEA2BC /* MTMTImagePickerModuleInterface.h in Headers */,
 				9A02E0A6964495E6F5B7D558278F9FE2 /* MTMTImagePickerPresenter.h in Headers */,
@@ -1791,6 +1797,7 @@
 				6ABB2DC0D2059F57193092A5E554B5A0 /* MTMTImagePickerWireframe.h in Headers */,
 				08F07FD45BCAFE917EC8185E4C8BE3A9 /* MTPickerPreviewView.h in Headers */,
 				E903953F1EF833525C5C9E8CF23EE1F9 /* MTPopHelperView.h in Headers */,
+				E2C9D3F22675DB3B002FDA8A /* MTPickerMenuView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2264,8 +2271,10 @@
 				EE1B4F575869B3E68864E1484ABDA620 /* MTImagePicker.m in Sources */,
 				7157DA05FCF3C48A239FFA643ABDD295 /* MTMTImagePickerDataManager.m in Sources */,
 				73B306C8C64D5C7D5338B49AA10388EC /* MTMTImagePickerInteractor.m in Sources */,
+				E2C9D3F72675EBE4002FDA8A /* MTImagePreviewCell.m in Sources */,
 				DCA9BEFD160547782A241811D3137C50 /* MTMTImagePickerPresenter.m in Sources */,
 				F43EED5175E491C92E676003EC701BFE /* MTMTImagePickerViewController.m in Sources */,
+				E2C9D3F32675DB3B002FDA8A /* MTPickerMenuView.m in Sources */,
 				6C24605B1EDB10A58F272FCA3DDA8BD3 /* MTMTImagePickerWireframe.m in Sources */,
 				B63A17AC6B26365EC85FDC2593C91804 /* MTPickerPreviewView.m in Sources */,
 				79E02D743322BB80BCA7980B1AEA129F /* MTPopHelperView.m in Sources */,
@@ -3142,8 +3151,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
