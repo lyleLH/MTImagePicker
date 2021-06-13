@@ -6,11 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MTImagePickerViewInterface.h"
+#import "MTImagePickerPresenter.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MTPickerMenuView : UIView
-
+@interface MTPickerMenuView : UIView <MTImagePickerViewInputInterface>
+@property (nonatomic,weak) MTImagePickerPresenter *eventHandler;
 @end
 
 NS_ASSUME_NONNULL_END

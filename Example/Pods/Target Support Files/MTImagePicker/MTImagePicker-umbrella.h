@@ -11,12 +11,13 @@
 #endif
 
 #import "MTMTImagePickerDataManager.h"
-#import "MTMTImagePickerInteractor.h"
+#import "MTImagePickerInteractor.h"
 #import "MTMTImagePickerModuleInterface.h"
 #import "MTImagePicker.h"
-#import "MTMTImagePickerPresenter.h"
-#import "MTMTImagePickerViewController.h"
-#import "MTMTImagePickerViewInterface.h"
+#import "MTImagePickerPresenter.h"
+#import "MTImagePickerViewInterface.h"
+#import "MTImagePreviewCell.h"
+#import "MTPickerMenuView.h"
 #import "MTPickerPreviewView.h"
 #import "MTPopHelperView.h"
 #import "MTMTImagePickerWireframe.h"

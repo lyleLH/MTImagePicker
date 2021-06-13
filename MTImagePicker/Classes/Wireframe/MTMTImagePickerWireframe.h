@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 #import "MTImagePicker.h"
-#import "MTMTImagePickerPresenter.h"
+#import "MTImagePickerPresenter.h"
 
-@class MTMTImagePickerPresenter;
+@class MTImagePickerPresenter;
 
 /**
  Module wireframe for the MTImagePicker module.
@@ -19,7 +19,7 @@
 @interface MTMTImagePickerWireframe : NSObject
 
 @property (nonatomic, strong) MTImagePicker *picker;
-@property (nonatomic, strong) MTMTImagePickerPresenter *presenter;
+@property (nonatomic, strong) MTImagePickerPresenter *presenter;
 
 // initialization
 - (void)presentSelfFromViewController:(UIViewController *)viewController;
