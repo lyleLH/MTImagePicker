@@ -10,8 +10,7 @@
 
 
 
-#import "MTImagePickerViewInterface.h"
-
+#import <MTImagePickerViewInterface.h>
 @class MTMTImagePickerWireframe;
 @class MTMTImagePickerInteractor;
 

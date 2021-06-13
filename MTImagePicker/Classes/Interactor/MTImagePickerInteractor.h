@@ -8,11 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MTImagePickerPresenter.h"
-#import "MTMTImagePickerDataManager.h"
 
 @class MTImagePickerPresenter;
-
+@class MTMTImagePickerDataManager;
 /**
  Business logic for the MTImagePicker module.
  */
