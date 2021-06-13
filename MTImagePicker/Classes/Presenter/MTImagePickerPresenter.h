@@ -11,17 +11,19 @@
 
 
 #import <MTImagePickerViewInterface.h>
+#import <MTImagePickerInteractorProtocol.h>
 @class MTMTImagePickerWireframe;
-@class MTMTImagePickerInteractor;
+@class MTImagePickerInteractor;
 
 /**
  Display logic for the MTImagePicker module.
  */
-@interface MTImagePickerPresenter : NSObject <MTImagePickerViewInputInterface>
+@interface MTImagePickerPresenter : NSObject <MTImagePickerViewOutputInterface>
 
-@property (nonatomic, strong) MTMTImagePickerInteractor *interactor;
+@property (nonatomic, strong) MTImagePickerInteractor <MTImagePickerInteractorInputProtocol>*interactor;
+
 @property (nonatomic, weak) MTMTImagePickerWireframe *wireframe;
 
-@property (nonatomic, weak) UIViewController<MTImagePickerViewOutputInterface> *userInterface;
+@property (nonatomic, weak) UIViewController<MTImagePickerViewInputInterface> *userInterface;
 
 @end

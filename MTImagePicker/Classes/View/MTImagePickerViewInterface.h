@@ -11,11 +11,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol MTImagePickerViewInputInterface <NSObject>
 
+- (void)reloadViewContent:(NSArray *)data;
 
 @end
 
 
 @protocol MTImagePickerViewOutputInterface <NSObject>
+
+-(void)setUpViews;
 
 @end
 

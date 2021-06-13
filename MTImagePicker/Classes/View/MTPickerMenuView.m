@@ -19,6 +19,10 @@
 
 @implementation MTPickerMenuView
 
+- (void)reloadViewContent:(NSArray *)data {
+    [self.prewView reloadCollecionViews:data];
+}
+
 
 - (void)layoutSubviews {
     [super layoutSubviews];

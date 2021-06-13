@@ -1,5 +1,5 @@
 //
-//  MTMTImagePickerDataManager.h
+//  MTImagePickerDataManager.h
 //  MTImagePicker
 //
 //  Created by MTTGCC on 10/06/21.
@@ -11,6 +11,6 @@
 /**
  Data manager for the MTImagePicker module.
  */
-@interface MTMTImagePickerDataManager : NSObject
-
+@interface MTImagePickerDataManager : NSObject
+- (NSArray *)getImageAssets;
 @end

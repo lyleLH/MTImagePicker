@@ -8,6 +8,7 @@
 #import "MTPickerPreviewView.h"
 #import <MTCategoryComponent/MTCategoryComponentHeader.h>
 #import "MTImagePreviewCell.h"
+#import <MTLayoutUtilityComponent/MTMasConstraintMaker.h>
 @interface MTPickerPreviewView ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 
@@ -20,26 +21,49 @@
 
 @implementation MTPickerPreviewView
 
+
+
+- (void)reloadCollecionViews:(NSArray*)datas {
+    
+    self.dataSource = [NSMutableArray arrayWithArray:datas];
+    [self.collectionView reloadData];
+//    [self.collectionView layoutIfNeeded];
+
+}
+
+
+
+
 -(void)layoutSubviews {
     [super layoutSubviews];
+
     [self.collectionView reloadData];
+    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.to(self).left(0).right(0).top(0).bottom(0);
+    }];
 }
 #pragma mark -
 #pragma mark - UICollectionViewDelegate,UICollectionViewDataSource
  
-
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return self.dataSource.count;
 }
 
-- (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    
+
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     MTImagePreviewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([MTImagePreviewCell class]) forIndexPath:indexPath];
-    cell.contentView.backgroundColor = [UIColor mt_randomColor];
+//    cell.contentView.backgroundColor = [UIColor mt_randomColor];
+    cell.item = self.dataSource[indexPath.row];
     return  cell;
 }
 
-
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
 
@@ -55,6 +79,7 @@
         
         [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
         _collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:flowLayout];
+        
         _collectionView.delegate = self;
         _collectionView.dataSource  = self;
         _collectionView.alwaysBounceVertical = NO;
@@ -68,8 +93,6 @@
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
         [self addSubview:_collectionView];
- 
-        
     }
     return _collectionView;
 }

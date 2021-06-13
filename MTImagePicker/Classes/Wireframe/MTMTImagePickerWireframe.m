@@ -23,7 +23,7 @@
     // save reference
     
     self.previewView= [[MTPickerMenuView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 368)];
-    
+    self.presenter = [[MTImagePickerPresenter alloc] init];
 //    self.viewController = [[MTMTImagePickerViewController alloc] init];
 
     // view <-> presenter
@@ -39,6 +39,7 @@
     MTPopHelperView* helperView =   [[MTPopHelperView alloc]initWithFrame:viewController.view.bounds];
     [helperView showPopContentView:self.previewView];
     [viewController.view addSubview:helperView];
+    [self.presenter setUpViews];
 }
 
 

@@ -10,8 +10,9 @@
 #endif
 #endif
 
-#import "MTMTImagePickerDataManager.h"
+#import "MTImagePickerDataManager.h"
 #import "MTImagePickerInteractor.h"
+#import "MTImagePickerInteractorProtocol.h"
 #import "MTMTImagePickerModuleInterface.h"
 #import "MTImagePicker.h"
 #import "MTImagePickerPresenter.h"

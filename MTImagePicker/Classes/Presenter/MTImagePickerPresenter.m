@@ -13,4 +13,16 @@
 @implementation MTImagePickerPresenter
 
  
+- (void)setUpViews {
+    [self.userInterface reloadViewContent:[self.interactor getImagesPrepared]];
+}
+
+
+
+- (MTImagePickerInteractor<MTImagePickerInteractorInputProtocol> *)interactor {
+    if(!_interactor){
+        _interactor = [[MTImagePickerInteractor alloc] init];
+    }
+    return _interactor;
+    }
 @end

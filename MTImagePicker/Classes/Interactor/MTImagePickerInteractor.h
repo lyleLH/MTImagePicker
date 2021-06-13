@@ -7,16 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-
-
+ 
+#import <MTImagePickerInteractorProtocol.h>
 @class MTImagePickerPresenter;
-@class MTMTImagePickerDataManager;
+@class MTImagePickerDataManager;
 /**
  Business logic for the MTImagePicker module.
  */
-@interface MTImagePickerInteractor : NSObject
+@interface MTImagePickerInteractor : NSObject <MTImagePickerInteractorInputProtocol>
 
-@property (nonatomic, weak) MTImagePickerPresenter *presenter;
-@property (nonatomic, strong) MTMTImagePickerDataManager *dataManager;
+@property (nonatomic, weak) MTImagePickerPresenter <MTImagePickerInteractorOutputProtocol>*presenter;
+@property (nonatomic, strong) MTImagePickerDataManager *dataManager;
 
 @end

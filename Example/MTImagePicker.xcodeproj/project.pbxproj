@@ -63,10 +63,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CD698A0D834EBD8C60DA733 /* Pods_MTImagePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTImagePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB48945E342F2423A9E43303 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CBA6BEC23756328D6AD27A5F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CB48945E342F2423A9E43303 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CBA6BEC23756328D6AD27A5F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D5BDE942959155512A9B6150 /* Pods-MTImagePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTImagePicker_Example.debug.xcconfig"; path = "Target Support Files/Pods-MTImagePicker_Example/Pods-MTImagePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EE2D2A3E9E585EF11725892C /* MTImagePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MTImagePicker.podspec; path = ../MTImagePicker.podspec; sourceTree = "<group>"; };
+		EE2D2A3E9E585EF11725892C /* MTImagePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MTImagePicker.podspec; path = ../MTImagePicker.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				4324E8DC9FE478530FCACB0D /* Pods-MTImagePicker_Tests.debug.xcconfig */,
 				70BC0AF0D9370706B0878BCD /* Pods-MTImagePicker_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

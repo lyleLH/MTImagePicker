@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MTPickerPreviewView : UIView
 
+- (void)reloadCollecionViews:(NSArray*)datas;
 @end
 
 NS_ASSUME_NONNULL_END
