@@ -9,6 +9,11 @@
 #import <MTCategoryComponent/MTCategoryComponentHeader.h>
 #import "MTImagePreviewCell.h"
 #import <MTLayoutUtilityComponent/MTMasConstraintMaker.h>
+#import <Photos/Photos.h>
+static const float actionsViewCellHeight = 54.0f;
+static const float photosViewHeight = 200.0f;
+static const float photosViewInset = 5.0f;
+
 @interface MTPickerPreviewView ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 
@@ -65,9 +70,25 @@
     
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+- (UIEdgeInsets) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    return UIEdgeInsetsMake(photosViewInset, photosViewInset, photosViewInset, photosViewInset);
+}
 
-    return CGSizeMake([UIScreen mainScreen].bounds.size.width, 200);
+- (CGFloat) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
+    return photosViewInset;
+}
+
+
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    PHAsset *asset = self.dataSource[indexPath.row];
+    CGFloat height = photosViewHeight - 2 * photosViewInset;
+    CGFloat aspectRatio = asset.pixelWidth / (CGFloat)asset.pixelHeight;
+    CGFloat width = height * aspectRatio;
+    CGSize size = CGSizeMake(width, height);
+    return size;
+    
+//    return CGSizeMake([UIScreen mainScreen].bounds.size.width, 200);
 }
 
 - (UICollectionView *)collectionView {
