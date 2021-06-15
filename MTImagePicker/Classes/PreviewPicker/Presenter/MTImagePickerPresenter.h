@@ -12,7 +12,7 @@
 
 #import <MTImagePickerViewInterface.h>
 #import <MTImagePickerInteractorProtocol.h>
-@class MTMTImagePickerWireframe;
+@class MTImagePickerWireframe;
 @class MTImagePickerInteractor;
 
 /**
@@ -22,8 +22,8 @@
 
 @property (nonatomic, strong) MTImagePickerInteractor <MTImagePickerInteractorInputProtocol>*interactor;
 
-@property (nonatomic, weak) MTMTImagePickerWireframe *wireframe;
+@property (nonatomic, weak) MTImagePickerWireframe *wireframe;
 
-@property (nonatomic, weak) UIViewController<MTImagePickerViewInputInterface> *userInterface;
+@property (nonatomic, weak) id <MTImagePickerViewInputInterface> userInterface;
 
 @end
