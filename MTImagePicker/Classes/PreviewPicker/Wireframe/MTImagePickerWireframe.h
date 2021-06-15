@@ -1,5 +1,5 @@
 //
-//  MTMTImagePickerWireframe.h
+//  MTImagePickerWireframe.h
 //  MTImagePicker
 //
 //  Created by MTTGCC on 10/06/21.
@@ -16,7 +16,7 @@
 /**
  Module wireframe for the MTImagePicker module.
  */
-@interface MTMTImagePickerWireframe : NSObject
+@interface MTImagePickerWireframe : NSObject
 
 @property (nonatomic, strong) MTImagePicker *picker;
 @property (nonatomic, strong) MTImagePickerPresenter *presenter;

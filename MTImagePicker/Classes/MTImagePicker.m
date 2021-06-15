@@ -6,12 +6,12 @@
 //
 
 #import "MTImagePicker.h"
-#import "MTMTImagePickerWireframe.h"
+#import "MTImagePickerWireframe.h"
 @implementation MTImagePicker
 
 
 - (void)showImagePickerInViewController:(UIViewController*)vc withDelegate:(id)delegate {
-    MTMTImagePickerWireframe * wireframe  = [[MTMTImagePickerWireframe alloc]init];
+    MTImagePickerWireframe * wireframe  = [[MTImagePickerWireframe alloc]init];
     [wireframe presentSelfFromViewController:vc];
 }
 

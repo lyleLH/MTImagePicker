@@ -8,7 +8,7 @@
 
 #import "MTImagePickerPresenter.h"
 #import "MTImagePickerInteractor.h"
-#import "MTMTImagePickerWireframe.h"
+#import "MTImagePickerWireframe.h"
 
 @implementation MTImagePickerPresenter
 

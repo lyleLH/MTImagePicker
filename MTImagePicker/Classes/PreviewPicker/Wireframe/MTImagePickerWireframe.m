@@ -1,22 +1,22 @@
 //
-//  MTMTImagePickerWireframe.m
+//  MTImagePickerWireframe.m
 //  MTImagePicker
 //
 //  Created by MTTGCC on 10/06/21.
 //
 //
 
-#import "MTMTImagePickerWireframe.h"
+#import "MTImagePickerWireframe.h"
 
 #import "MTPopHelperView.h"
 #import "MTPickerMenuView.h"
-@interface MTMTImagePickerWireframe ()
+@interface MTImagePickerWireframe ()
 
 
 @property (nonatomic, strong) MTPickerMenuView * previewView;
 @end
 
-@implementation MTMTImagePickerWireframe
+@implementation MTImagePickerWireframe
 
 - (void)presentSelfFromViewController:(UIViewController *)viewController
 {
