@@ -50,7 +50,7 @@ DEPENDENCIES:
   - MTImagePicker (from `../`)
 
 SPEC REPOS:
-  https://github.com/lyleLH/MTSpecs.git:
+  https://github.com/lyleLH/MTSpecs:
     - MTCategoryComponent
     - MTLayoutUtilityComponent
   trunk:
@@ -69,11 +69,11 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MTCategoryComponent: d90653035bd2c6f7da188f9b4a34b8e3ad845e40
-  MTImagePicker: 9ae7566c722ea249249870c30863612c1087b187
+  MTImagePicker: 9ab67269e82785d69927e72d1ad73ec3d0f06b85
   MTLayoutUtilityComponent: fd2d96fd8e3c3214b595f32b5e2fb7aceab61336
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
 PODFILE CHECKSUM: a5d92f9559793853c49aef61a1e14f0d6d76b4b5
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.9.3

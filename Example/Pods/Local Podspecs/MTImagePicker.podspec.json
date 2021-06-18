@@ -1,9 +1,9 @@
 {
   "name": "MTImagePicker",
   "version": "0.1.0",
-  "summary": "A short description of MTImagePicker.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/v2top1@163.com/MTImagePicker",
+  "summary": "一个模仿snapseed样式的图片选择器 image  previewer & picker",
+  "description": "样式参照snapseed，但是支持多选，同时代码结构有着良好的设计，实现了VIPER架构。支持简单的预览减少错选的几率，同时增加了多选的功能。",
+  "homepage": "https://github.com/lyleLH/MTImagePicker",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "v2top1@163.com": "tomliu@yeahka.com"
   },
   "source": {
-    "git": "https://github.com/v2top1@163.com/MTImagePicker.git",
+    "git": "https://github.com/lyleLH/MTImagePicker.git",
     "tag": "0.1.0"
   },
   "platforms": {
