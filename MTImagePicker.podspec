@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   样式参照snapseed，但是支持多选，同时代码结构有着良好的设计，实现了VIPER架构。支持简单的预览减少错选的几率，同时增加了多选的功能。
                        DESC
 
-  s.homepage         = 'https://github.com/v2top1@163.com/MTImagePicker'
+  s.homepage         = 'https://github.com/lyleLH/MTImagePicker'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'v2top1@163.com' => 'tomliu@yeahka.com' }
-  s.source           = { :git => 'https://github.com/v2top1@163.com/MTImagePicker.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/lyleLH/MTImagePicker.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
