@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MTPickerMenuView : UIView <MTImagePickerViewInputInterface>
-@property (nonatomic,weak) MTImagePickerPresenter *eventHandler;
+@property (nonatomic,strong) MTImagePickerPresenter *eventHandler;
 @end
 
 NS_ASSUME_NONNULL_END

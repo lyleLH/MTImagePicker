@@ -6,13 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MTImageModel.h"
 NS_ASSUME_NONNULL_BEGIN
-@class PHAsset;
+
 @interface MTImagePreviewCell : UICollectionViewCell
 @property (nonatomic ,strong) UIImageView *photoImageView;
 
-@property (nonatomic,strong) PHAsset *item;
+@property (nonatomic,strong) MTImageModel *item;
 @end
 
 NS_ASSUME_NONNULL_END

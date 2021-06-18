@@ -66,7 +66,7 @@
 		CB48945E342F2423A9E43303 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CBA6BEC23756328D6AD27A5F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D5BDE942959155512A9B6150 /* Pods-MTImagePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTImagePicker_Example.debug.xcconfig"; path = "Target Support Files/Pods-MTImagePicker_Example/Pods-MTImagePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EE2D2A3E9E585EF11725892C /* MTImagePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MTImagePicker.podspec; path = ../MTImagePicker.podspec; sourceTree = "<group>"; };
+		EE2D2A3E9E585EF11725892C /* MTImagePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MTImagePicker.podspec; path = ../MTImagePicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

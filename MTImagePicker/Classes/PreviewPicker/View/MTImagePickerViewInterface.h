@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)setUpViews;
 
+- (void)previewCollectionViewDidselected:(NSIndexPath*)indexPath ;
+- (void)menuTableViewViewDidselected:(NSIndexPath*)indexPath ;
+
 @end
 
 NS_ASSUME_NONNULL_END

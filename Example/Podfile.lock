@@ -2,32 +2,34 @@ PODS:
   - LookinServer (1.0.2)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
-  - MTCategoryComponent (1.1.0):
-    - MTCategoryComponent/Foundation (= 1.1.0)
-    - MTCategoryComponent/UIKit (= 1.1.0)
-  - MTCategoryComponent/Foundation (1.1.0):
-    - MTCategoryComponent/Foundation/Sources (= 1.1.0)
-  - MTCategoryComponent/Foundation/Sources (1.1.0)
-  - MTCategoryComponent/UIKit (1.1.0):
-    - MTCategoryComponent/UIKit/UIColor (= 1.1.0)
-    - MTCategoryComponent/UIKit/UIControl (= 1.1.0)
-    - MTCategoryComponent/UIKit/UIImage (= 1.1.0)
-    - MTCategoryComponent/UIKit/UIImageView (= 1.1.0)
-    - MTCategoryComponent/UIKit/UITableView (= 1.1.0)
-    - MTCategoryComponent/UIKit/UITextField (= 1.1.0)
-    - MTCategoryComponent/UIKit/UIView (= 1.1.0)
-    - MTCategoryComponent/UIKit/UIViewController (= 1.1.0)
-  - MTCategoryComponent/UIKit/UIColor (1.1.0)
-  - MTCategoryComponent/UIKit/UIControl (1.1.0)
-  - MTCategoryComponent/UIKit/UIImage (1.1.0):
+  - MTCategoryComponent (1.2.0):
+    - MTCategoryComponent/Foundation (= 1.2.0)
+    - MTCategoryComponent/UIKit (= 1.2.0)
+  - MTCategoryComponent/Foundation (1.2.0):
+    - MTCategoryComponent/Foundation/Sources (= 1.2.0)
+  - MTCategoryComponent/Foundation/Sources (1.2.0)
+  - MTCategoryComponent/UIKit (1.2.0):
+    - MTCategoryComponent/UIKit/UIColor (= 1.2.0)
+    - MTCategoryComponent/UIKit/UIControl (= 1.2.0)
+    - MTCategoryComponent/UIKit/UIImage (= 1.2.0)
+    - MTCategoryComponent/UIKit/UIImageView (= 1.2.0)
+    - MTCategoryComponent/UIKit/UIResponder (= 1.2.0)
+    - MTCategoryComponent/UIKit/UITableView (= 1.2.0)
+    - MTCategoryComponent/UIKit/UITextField (= 1.2.0)
+    - MTCategoryComponent/UIKit/UIView (= 1.2.0)
+    - MTCategoryComponent/UIKit/UIViewController (= 1.2.0)
+  - MTCategoryComponent/UIKit/UIColor (1.2.0)
+  - MTCategoryComponent/UIKit/UIControl (1.2.0)
+  - MTCategoryComponent/UIKit/UIImage (1.2.0):
     - MTCategoryComponent/UIKit/UIColor
     - MTCategoryComponent/UIKit/UIView
-  - MTCategoryComponent/UIKit/UIImageView (1.1.0)
-  - MTCategoryComponent/UIKit/UITableView (1.1.0)
-  - MTCategoryComponent/UIKit/UITextField (1.1.0)
-  - MTCategoryComponent/UIKit/UIView (1.1.0):
+  - MTCategoryComponent/UIKit/UIImageView (1.2.0)
+  - MTCategoryComponent/UIKit/UIResponder (1.2.0)
+  - MTCategoryComponent/UIKit/UITableView (1.2.0)
+  - MTCategoryComponent/UIKit/UITextField (1.2.0)
+  - MTCategoryComponent/UIKit/UIView (1.2.0):
     - MTCategoryComponent/UIKit/UIColor
-  - MTCategoryComponent/UIKit/UIViewController (1.1.0):
+  - MTCategoryComponent/UIKit/UIViewController (1.2.0):
     - MBProgressHUD
     - MTCategoryComponent/UIKit/UIColor
     - Toast
@@ -48,7 +50,7 @@ DEPENDENCIES:
   - MTImagePicker (from `../`)
 
 SPEC REPOS:
-  https://github.com/lyleLH/MTSpecs:
+  https://github.com/lyleLH/MTSpecs.git:
     - MTCategoryComponent
     - MTLayoutUtilityComponent
   trunk:
@@ -66,7 +68,7 @@ SPEC CHECKSUMS:
   LookinServer: d6874df8b58096c8d463817b6baaa3abc21d31f7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MTCategoryComponent: 4586842fd8b00968af40af63e90732d389c1cad4
+  MTCategoryComponent: d90653035bd2c6f7da188f9b4a34b8e3ad845e40
   MTImagePicker: 9ae7566c722ea249249870c30863612c1087b187
   MTLayoutUtilityComponent: fd2d96fd8e3c3214b595f32b5e2fb7aceab61336
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
@@ -74,4 +76,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: a5d92f9559793853c49aef61a1e14f0d6d76b4b5
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

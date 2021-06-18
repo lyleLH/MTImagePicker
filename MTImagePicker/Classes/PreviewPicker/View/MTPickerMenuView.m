@@ -19,6 +19,10 @@
 
 @implementation MTPickerMenuView
 
+- (void)setEventHandler:(MTImagePickerPresenter *)eventHandler {
+    _eventHandler = eventHandler;
+}
+
 - (void)reloadViewContent:(NSArray *)data {
     [self.prewView reloadCollecionViews:data];
 }
@@ -63,13 +67,17 @@
     }else if(indexPath.row ==2){
         cell.detailTextLabel.text = @"相机";
     }else if(indexPath.row ==3){
-        cell.detailTextLabel.text = @"打开最新图片";
+        cell.detailTextLabel.text = @"确定";
     }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if(indexPath.row ==3){
+        [self mt_passEventName:@"menuConfirmSelected" fromObject:self withUserInfo:@{@"index":indexPath}];
+    }
+   
 }
  
 
@@ -94,6 +102,13 @@
     return _prewView;
 }
 
-
+- (void)mt_passEventName:(NSString *)eventName fromObject:(id)obj withUserInfo:(NSDictionary *)userInfo {
+    if([eventName isEqualToString:@"cellDidSelected"]){
+        [self.eventHandler previewCollectionViewDidselected:userInfo[@"index"]];
+    }else  if([eventName isEqualToString:@"menuConfirmSelected"]){
+        [self.eventHandler menuTableViewViewDidselected:userInfo[@"index"]];
+    }
+   
+}
 
 @end

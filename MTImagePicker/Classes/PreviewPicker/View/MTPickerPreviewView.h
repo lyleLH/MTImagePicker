@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MTCategoryComponent/UIResponder+MTExtension.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MTPickerPreviewView : UIView

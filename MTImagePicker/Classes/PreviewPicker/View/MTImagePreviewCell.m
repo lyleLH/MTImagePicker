@@ -7,7 +7,10 @@
 
 #import "MTImagePreviewCell.h"
 #import <Photos/PHImageManager.h>
-
+#import <MTLayoutUtilityComponent/MTMasConstraintMaker.h>
+@interface MTImagePreviewCell ()
+@property (nonatomic,strong)UIView *mask;
+@end
 
 @implementation MTImagePreviewCell
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -21,14 +24,17 @@
 - (void)layoutSubviews{
     [super layoutSubviews];
     self.photoImageView.frame = self.contentView.bounds;
+    [self.contentView addSubview:self.mask];
+    self.mask.frame = self.contentView.bounds;
 }
 
-- (void)setItem:(PHAsset *)item{
+- (void)setItem:(MTImageModel *)item{
     PHImageRequestOptions *options = [[PHImageRequestOptions alloc]init];
     options.resizeMode = PHImageRequestOptionsResizeModeFast;
-    [[PHImageManager defaultManager]requestImageForAsset:item targetSize:[UIScreen mainScreen].bounds.size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+    [[PHImageManager defaultManager]requestImageForAsset:item.asset targetSize:[UIScreen mainScreen].bounds.size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
         self.photoImageView.image = result;
     }];
+    self.mask .hidden = !item.isSelected;
 }
 
 - (UIImageView *)photoImageView{
@@ -39,4 +45,15 @@
     return _photoImageView;
 }
 
+
+- (UIView *)mask {
+    if(!_mask){
+        UIView *mask = [UIView new];
+      
+        _mask = mask;
+        mask.backgroundColor = [UIColor.blackColor colorWithAlphaComponent:0.6f];
+        mask.hidden = YES;
+    }
+    return _mask;
+}
 @end

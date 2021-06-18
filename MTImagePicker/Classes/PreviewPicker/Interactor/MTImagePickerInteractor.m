@@ -13,8 +13,8 @@
 @implementation MTImagePickerInteractor
 
 
-- (NSArray *)getImagesPrepared {
-    return   [self.dataManager getImageAssets];
+- (void)loadAllImages {
+    [self.presenter getImagesPrepared: [self.dataManager imageModels]] ;
 }
 
 
@@ -24,5 +24,28 @@
     }
     return _dataManager;
 }
+
+
+- (void)refreshImagesStatesIsSelectedWithIndexPaths:(NSArray <NSIndexPath*>*)indexPaths {
+    [indexPaths enumerateObjectsUsingBlock:^(NSIndexPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSInteger row = obj.row;
+        MTImageModel *model =   self.dataManager.imageModels[row];
+        model.isSelected = ! model.isSelected ;
+        if(model.isSelected){
+            [self.dataManager.selectedImageModels addObject:model];
+        }else{
+            if([self.dataManager.selectedImageModels containsObject:model]){
+                [self.dataManager.selectedImageModels removeObject:model];
+            }
+        }
+    }];
+    [self.presenter getImagesPrepared: [self.dataManager imageModels]] ;
+}
+
+- (void)getAllSelectedImages {
+    [self.presenter getSelectedImagesPrepared: [self.dataManager selectedImageModels]] ;
+}
+
+
 
 @end

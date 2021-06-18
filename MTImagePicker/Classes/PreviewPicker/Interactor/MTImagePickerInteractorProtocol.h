@@ -11,10 +11,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol MTImagePickerInteractorInputProtocol <NSObject>
 
-- (NSArray *)getImagesPrepared;
+- (void)loadAllImages;
+- (void)getAllSelectedImages;
+- (void)refreshImagesStatesIsSelectedWithIndexPaths:(NSArray <NSIndexPath*>*)indexPaths ;
 @end
 
 @protocol MTImagePickerInteractorOutputProtocol <NSObject>
+
+- (void)getImagesPrepared:(NSArray *)imageModels;
+
+- (void)getSelectedImagesPrepared:(NSArray *)imageModels;
 
 @end
 

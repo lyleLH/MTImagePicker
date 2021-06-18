@@ -23,25 +23,29 @@
     // save reference
     
     self.previewView= [[MTPickerMenuView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 368)];
-    self.presenter = [[MTImagePickerPresenter alloc] init];
-//    self.viewController = [[MTMTImagePickerViewController alloc] init];
-
-    // view <-> presenter
-    self.presenter.userInterface = self.previewView;
-    self.previewView.eventHandler = self.presenter;
-
-    // present controller
-    // *** present self with RootViewController
-//    [viewController presentViewController:self.viewController animated:YES completion:NULL];
-   
     self.previewView.backgroundColor = [UIColor whiteColor];
+
+    
     
     MTPopHelperView* helperView =   [[MTPopHelperView alloc]initWithFrame:viewController.view.bounds];
-    [helperView showPopContentView:self.previewView];
     [viewController.view addSubview:helperView];
+    
+    [helperView showPopContentView:self.previewView];
+    
+    self.previewView.eventHandler = self.presenter;
+    self.presenter.userInterface = self.previewView;
+   
     [self.presenter setUpViews];
 }
 
+
+- (MTImagePickerPresenter *)presenter {
+    if(!_presenter){
+        MTImagePickerPresenter *presenter = [[MTImagePickerPresenter alloc] init];
+        _presenter = presenter;
+    }
+    return _presenter;
+}
 
 
 @end

@@ -10,6 +10,7 @@
 #import "MTImagePreviewCell.h"
 #import <MTLayoutUtilityComponent/MTMasConstraintMaker.h>
 #import <Photos/Photos.h>
+
 static const float actionsViewCellHeight = 54.0f;
 static const float photosViewHeight = 200.0f;
 static const float photosViewInset = 5.0f;
@@ -68,6 +69,7 @@ static const float photosViewInset = 5.0f;
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    [self mt_passEventName:@"cellDidSelected" fromObject:self withUserInfo:@{@"index":indexPath}];
 }
 
 - (UIEdgeInsets) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
@@ -81,7 +83,8 @@ static const float photosViewInset = 5.0f;
 
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    PHAsset *asset = self.dataSource[indexPath.row];
+    MTImageModel * model = self.dataSource[indexPath.row];
+    PHAsset *asset = model.asset;
     CGFloat height = photosViewHeight - 2 * photosViewInset;
     CGFloat aspectRatio = asset.pixelWidth / (CGFloat)asset.pixelHeight;
     CGFloat width = height * aspectRatio;

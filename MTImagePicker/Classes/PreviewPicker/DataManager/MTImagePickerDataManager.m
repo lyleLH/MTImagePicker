@@ -14,20 +14,37 @@
 
 @interface MTImagePickerDataManager ()
 @property (nonatomic ,strong) PHFetchResult *imageAssetsResult;
+
 @end
 
 
 @implementation MTImagePickerDataManager
 
-
-- (NSArray *)getImageAssets {
-    self.imageAssetsResult = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:nil];
-    NSMutableArray *assets = [NSMutableArray new];
-    for (PHAsset *asset in self.imageAssetsResult){
-        [assets insertObject:asset atIndex:0];
+- (PHFetchResult *)imageAssetsResult {
+    if(!_imageAssetsResult){
+        _imageAssetsResult = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:nil];
     }
-    return assets;
+    return _imageAssetsResult;
 }
 
+ 
 
+- (NSArray<MTImageModel *> *)imageModels {
+    if(!_imageModels){
+        NSMutableArray *assets = [NSMutableArray new];
+        for (PHAsset *asset in self.imageAssetsResult){
+            MTImageModel * model  = [[MTImageModel alloc]initWithImageAsset:asset];
+            [assets insertObject:model atIndex:0];
+        }
+        _imageModels = assets;
+    }
+    return _imageModels;
+}
+
+- (NSMutableArray<MTImageModel *> *)selectedImageModels {
+    if(!_selectedImageModels){
+        _selectedImageModels = [NSMutableArray new];
+    }
+    return _selectedImageModels;
+}
 @end

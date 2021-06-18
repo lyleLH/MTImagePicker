@@ -10,19 +10,48 @@
 #import "MTImagePickerInteractor.h"
 #import "MTImagePickerWireframe.h"
 
+@interface MTImagePickerPresenter ()<MTImagePickerInteractorOutputProtocol>
+
+@end
+
 @implementation MTImagePickerPresenter
 
- 
+#pragma mark -- MTImagePickerViewOutputInterface
+
 - (void)setUpViews {
-    [self.userInterface reloadViewContent:[self.interactor getImagesPrepared]];
+    [self.interactor loadAllImages];
+   
+}
+
+- (void)previewCollectionViewDidselected:(NSIndexPath *)indexPath {
+    [self.interactor refreshImagesStatesIsSelectedWithIndexPaths:@[indexPath]];
+   
+}
+
+- (void)menuTableViewViewDidselected:(NSIndexPath*)indexPath  {
+    [self.interactor getAllSelectedImages];
+}
+ 
+#pragma mark -- MTImagePickerInteractorOutputProtocol
+
+-(void)getImagesPrepared:(NSArray *)imageModels {
+    [self.userInterface reloadViewContent:imageModels];
+}
+
+-(void)getSelectedImagesPrepared:(NSArray *)imageModels {
+    
 }
 
 
 
 - (MTImagePickerInteractor<MTImagePickerInteractorInputProtocol> *)interactor {
     if(!_interactor){
-        _interactor = [[MTImagePickerInteractor alloc] init];
+        MTImagePickerInteractor* interactor = [[MTImagePickerInteractor alloc] init];
+        interactor.presenter = self;
+        _interactor = interactor;
     }
     return _interactor;
-    }
+}
+
+
 @end

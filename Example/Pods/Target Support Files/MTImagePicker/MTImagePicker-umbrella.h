@@ -18,6 +18,7 @@
 #import "MTAlubmPickerViewInterface.h"
 #import "MTAlubmPickerWireframe.h"
 #import "MTImagePicker.h"
+#import "MTImageModel.h"
 #import "MTImagePickerDataManager.h"
 #import "MTImagePickerInteractor.h"
 #import "MTImagePickerInteractorProtocol.h"

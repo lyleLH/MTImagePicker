@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MTImageModel.h"
 
 /**
  Data manager for the MTImagePicker module.
  */
 @interface MTImagePickerDataManager : NSObject
-- (NSArray *)getImageAssets;
+@property (nonatomic ,strong) NSArray <MTImageModel*>*imageModels;
+@property (nonatomic ,strong) NSMutableArray <MTImageModel*>*selectedImageModels;
 @end
