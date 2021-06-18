@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)getImagesPrepared:(NSArray *)imageModels;
 
-- (void)getSelectedImagesPrepared:(NSArray *)imageModels;
+- (void)getSelectedImagesPrepared:(NSArray *)images;
 
 @end
 

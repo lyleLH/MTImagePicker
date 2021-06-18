@@ -38,8 +38,9 @@
     [self.userInterface reloadViewContent:imageModels];
 }
 
--(void)getSelectedImagesPrepared:(NSArray *)imageModels {
+-(void)getSelectedImagesPrepared:(NSArray *)images {
     
+    [self.wireframe.picker.delegate imagePickerDidselectedImages:images];
 }
 
 

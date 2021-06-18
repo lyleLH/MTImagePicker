@@ -22,7 +22,7 @@
 
 @property (nonatomic, strong) MTImagePickerInteractor <MTImagePickerInteractorInputProtocol>*interactor;
 
-@property (nonatomic, weak) MTImagePickerWireframe *wireframe;
+@property (nonatomic, strong) MTImagePickerWireframe *wireframe;
 
 @property (nonatomic, weak) id <MTImagePickerViewInputInterface> userInterface;
 

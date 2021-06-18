@@ -47,4 +47,18 @@
     }
     return _selectedImageModels;
 }
+
+- (NSArray<UIImage *> *)selectedImages {
+    
+    NSMutableArray * pureImages = [NSMutableArray new];
+    PHImageRequestOptions *options = [[PHImageRequestOptions alloc]init];
+    options.resizeMode = PHImageRequestOptionsResizeModeFast;
+    [self.selectedImageModels enumerateObjectsUsingBlock:^(MTImageModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [[PHImageManager defaultManager]requestImageForAsset:obj.asset targetSize:[UIScreen mainScreen].bounds.size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            [pureImages addObject:result];
+        }];
+    }];
+    return [NSArray arrayWithArray:pureImages];
+    
+}
 @end

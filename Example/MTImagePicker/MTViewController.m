@@ -7,7 +7,7 @@
 //
 
 #import "MTViewController.h"
-#import <MTImagePicker/MTImagePicker.h>
+#import <MTImagePicker/MTImagePickerHeader.h>
 @interface MTViewController ()
 
 @end
@@ -28,7 +28,12 @@
 }
 
 - (IBAction)pickImageButtonAction:(id)sender {
-    [[[MTImagePicker alloc] init] showImagePickerInViewController:self withDelegate:self];
+   [[[MTImagePicker alloc] init] showImagePickerInViewController:self withDelegate:self];
 }
+
+- (void)imagePickerDidselectedImages:(NSArray*)images {
+    
+}
+
 
 @end

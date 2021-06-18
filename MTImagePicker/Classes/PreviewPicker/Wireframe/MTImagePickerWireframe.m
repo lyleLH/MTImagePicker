@@ -42,6 +42,7 @@
 - (MTImagePickerPresenter *)presenter {
     if(!_presenter){
         MTImagePickerPresenter *presenter = [[MTImagePickerPresenter alloc] init];
+        presenter.wireframe = self;
         _presenter = presenter;
     }
     return _presenter;

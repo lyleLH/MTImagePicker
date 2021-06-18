@@ -15,4 +15,6 @@
 @interface MTImagePickerDataManager : NSObject
 @property (nonatomic ,strong) NSArray <MTImageModel*>*imageModels;
 @property (nonatomic ,strong) NSMutableArray <MTImageModel*>*selectedImageModels;
+
+- (NSArray <UIImage*>*)selectedImages;
 @end

@@ -43,7 +43,7 @@
 }
 
 - (void)getAllSelectedImages {
-    [self.presenter getSelectedImagesPrepared: [self.dataManager selectedImageModels]] ;
+    [self.presenter getSelectedImagesPrepared:[self.dataManager selectedImages]] ;
 }
 
 

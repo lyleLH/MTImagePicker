@@ -13,6 +13,8 @@
 - (void)showImagePickerInViewController:(UIViewController*)vc withDelegate:(id)delegate {
     MTImagePickerWireframe * wireframe  = [[MTImagePickerWireframe alloc]init];
     [wireframe presentSelfFromViewController:vc];
+    wireframe.picker = self;
+    self.delegate = delegate;
 }
 
 
