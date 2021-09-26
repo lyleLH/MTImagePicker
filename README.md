@@ -22,7 +22,7 @@ pod 'MTImagePicker'
 
 ## Author
 
-v2top1@163.com, tomliu@yeahka.com
+v2top1@163.com, tomliu 
 
 ## License
 
